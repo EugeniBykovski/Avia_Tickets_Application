@@ -16,3 +16,6 @@ The application also contains a settings file (Config), which contains all the a
 The application also has some plugins, several of which are connected to the API Service and App JS. Required for AJAX requests, Promises, communication between the application and the server. 
 
 In order to fulfill the requests, we need the AXIOS plugin.
+
+Добавляем слой Store. Это единый источник данных, в котором хранится какое-то состояние данных всего нашего приложения. В нашем случае, в Store мы будем хранить наши locations, это наши города и страны, которые мы получили от сервера (countries, cities). Это нужно для того, чтобы потом любая часть нашегтприложения имела единый источник, из которого она будет брать текущие данные, с которыми она будет работать.
+Из Store будет идти связь с нашим сервисом API Service.
