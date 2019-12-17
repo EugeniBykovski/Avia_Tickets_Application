@@ -17,5 +17,4 @@ The application also has some plugins, several of which are connected to the API
 
 In order to fulfill the requests, we need the AXIOS plugin.
 
-Добавляем слой Store. Это единый источник данных, в котором хранится какое-то состояние данных всего нашего приложения. В нашем случае, в Store мы будем хранить наши locations, это наши города и страны, которые мы получили от сервера (countries, cities). Это нужно для того, чтобы потом любая часть нашегтприложения имела единый источник, из которого она будет брать текущие данные, с которыми она будет работать.
-Из Store будет идти связь с нашим сервисом API Service.
+Add a Store layer. This is the only data source. In our case, we will store our locations in the store, these are our cities and countries that we received from the server (country, city). It was the one of a kind source from which it would work. From the store there will be a connection with our service API Service.
