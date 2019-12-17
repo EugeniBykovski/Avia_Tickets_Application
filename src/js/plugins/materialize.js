@@ -11,7 +11,7 @@ export function getSelectInstance(elem) { // будет принимать ка�
 }
 
 // Init Autocomplete
-const autocomplete = document.querySelectorAll('autocomplete');
+const autocomplete = document.querySelectorAll('.autocomplete');
 M.Autocomplete.init(autocomplete); // мы также делаем update data, по которой будет вестить поиск
 
 export function getAutocompleteInstance(elem) { // получение отдельного autocomplete instance
@@ -22,6 +22,7 @@ export function getAutocompleteInstance(elem) { // получение отдел
 const datepickers = document.querySelectorAll('.datepicker');
 M.Datepicker.init(datepickers, {
     showClearBtn: true,
+    format: 'yyyy-mm',
 });
 
 export function getDatePickerInstance(elem) { // получение отдельного datepicker instance
